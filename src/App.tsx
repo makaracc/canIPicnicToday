@@ -31,7 +31,7 @@ export const App: React.FC = () => {
             label="Age"
             onChange={handleCityChange}
           >
-            <MenuItem value="">Ten</MenuItem>
+            <MenuItem value="Melbourne">Melbourne</MenuItem>
           </Select>
         </FormControl>
         <Button variant="contained" color="primary">
