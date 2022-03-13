@@ -33,8 +33,8 @@ export const App: React.FC = () => {
         }`
       )
       .then((res) => {
-        console.log(res.data);
-        setData(res.data);
+        console.log(res.data.daily);
+        setData(res.data.daily);
       })
       .catch((err) => {
         console.log(err);
@@ -62,8 +62,9 @@ export const App: React.FC = () => {
         gap={2}
         justifyContent="center"
         alignItems="center"
+        minWidth="100%"
       >
-        <FormControl fullWidth>
+        <FormControl sx={{ width: "20%" }}>
           <InputLabel id="demo-simple-select-label">City</InputLabel>
           <Select
             labelId="demo-simple-select-label"
