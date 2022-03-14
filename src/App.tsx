@@ -10,6 +10,7 @@ import {
   Stack,
 } from "@mui/material";
 import axios from "axios";
+import fromUnixTime from "date-fns/fromUnixTime";
 
 const Melbourne = {
   lat: -37.840935,
@@ -45,6 +46,7 @@ export const App: React.FC = () => {
     if (city === "Melbourne") {
       getWeather(latlng.lat, latlng.lon);
     }
+    console.log(fromUnixTime(1647223200));
   };
 
   const component = (
