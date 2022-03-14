@@ -45,6 +45,12 @@ export const App: React.FC = () => {
   // TODO:
   // Take the percentage of rain during the day and calculate it as yes or no to picnic
   // Take temperature into consideration
+  // Take humidity into consideration
+  // Take wind speed into consideration
+  // Take cloudiness into consideration
+  // Take the time of day into consideration
+  // Take yesterday's weather into consideration if your friend lie
+  // Change date to dd/mmm/yyy format
 
   const handleCanIPicnic = () => {
     if (city === "Melbourne") {
