@@ -42,6 +42,10 @@ export const App: React.FC = () => {
       });
   };
 
+  // TODO:
+  // Take the percentage of rain during the day and calculate it as yes or no to picnic
+  // Take temperature into consideration
+
   const handleCanIPicnic = () => {
     if (city === "Melbourne") {
       getWeather(latlng.lat, latlng.lon);
