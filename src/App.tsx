@@ -36,10 +36,13 @@ export const App: React.FC = () => {
       .then((res) => {
         console.log(res.data.daily);
         setData(
-          res.data.daily.map((d: { dt: any; feels_like: { day: any } }) => ({
-            date: fromUnixTime(d.dt),
-            temp: d.feels_like.day - 273.15,
-          }))
+          res.data.daily.map(
+            (d: { dt: any; feels_like: { day: any }; rain: any }) => ({
+              date: fromUnixTime(d.dt),
+              temp: d.feels_like.day - 273.15,
+              rain: d.rain,
+            })
+          )
         );
       })
       .catch((err) => {
@@ -97,7 +100,7 @@ export const App: React.FC = () => {
           Can I Picnic?
         </Button>
       </Stack>
-      {JSON.stringify(data, null, 2)}
+      {JSON.stringify(data)}
     </Box>
   );
   return component;
