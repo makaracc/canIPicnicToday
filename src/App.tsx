@@ -35,7 +35,11 @@ export const App: React.FC = () => {
       )
       .then((res) => {
         console.log(res.data.daily);
-        setData(res.data.daily);
+        setData(
+          res.data.daily.map((d: { dt: any }) => ({
+            dt: d.dt,
+          }))
+        );
       })
       .catch((err) => {
         console.log(err);
@@ -92,7 +96,7 @@ export const App: React.FC = () => {
           Can I Picnic?
         </Button>
       </Stack>
-      {JSON.stringify(data)}
+      {JSON.stringify(data, null, 2)}
     </Box>
   );
   return component;
