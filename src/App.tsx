@@ -36,8 +36,9 @@ export const App: React.FC = () => {
       .then((res) => {
         console.log(res.data.daily);
         setData(
-          res.data.daily.map((d: { dt: any }) => ({
-            dt: d.dt,
+          res.data.daily.map((d: { dt: any; feels_like: { day: any } }) => ({
+            date: fromUnixTime(d.dt),
+            temp: d.feels_like.day - 273.15,
           }))
         );
       })
