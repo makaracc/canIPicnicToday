@@ -92,7 +92,15 @@ export const App: React.FC = () => {
   };
 
   // Take the time of day into consideration
+  const getTime = (time: number) => {
+    if (time > 18) {
+      return true;
+    }
+    return false;
+  };
+
   // Take yesterday's weather into consideration if your friend lie
+
   // Change date to dd/mmm/yyy format
 
   const handleCanIPicnic = () => {
