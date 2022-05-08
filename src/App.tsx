@@ -52,6 +52,13 @@ export const App: React.FC = () => {
 
   // TODO:
   // Take the percentage of rain during the day and calculate it as yes or no to picnic
+  const getPicnic = (rain: number) => {
+    if (rain > 0.1) {
+      return true;
+    }
+    return false;
+  };
+
   // Take temperature into consideration
   // Take humidity into consideration
   // Take wind speed into consideration
