@@ -76,6 +76,13 @@ export const App: React.FC = () => {
   };
 
   // Take wind speed into consideration
+  const getWind = (wind: number) => {
+    if (wind > 5) {
+      return true;
+    }
+    return false;
+  };
+
   // Take cloudiness into consideration
   // Take the time of day into consideration
   // Take yesterday's weather into consideration if your friend lie
