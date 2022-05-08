@@ -115,6 +115,7 @@ export const App: React.FC = () => {
     return `${day}/${month}/${year}`;
   };
 
+  // Normal from here
   const handleCanIPicnic = () => {
     if (city === "Melbourne") {
       getWeather(latlng.lat, latlng.lon);
