@@ -84,6 +84,13 @@ export const App: React.FC = () => {
   };
 
   // Take cloudiness into consideration
+  const getClouds = (clouds: number) => {
+    if (clouds > 0.5) {
+      return true;
+    }
+    return false;
+  };
+
   // Take the time of day into consideration
   // Take yesterday's weather into consideration if your friend lie
   // Change date to dd/mmm/yyy format
