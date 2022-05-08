@@ -68,6 +68,13 @@ export const App: React.FC = () => {
   };
 
   // Take humidity into consideration
+  const getHumidity = (humidity: number) => {
+    if (humidity > 0.5) {
+      return true;
+    }
+    return false;
+  };
+
   // Take wind speed into consideration
   // Take cloudiness into consideration
   // Take the time of day into consideration
