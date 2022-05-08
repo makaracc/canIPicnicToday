@@ -60,6 +60,13 @@ export const App: React.FC = () => {
   };
 
   // Take temperature into consideration
+  const getTemperature = (temp: number) => {
+    if (temp > 20) {
+      return true;
+    }
+    return false;
+  };
+
   // Take humidity into consideration
   // Take wind speed into consideration
   // Take cloudiness into consideration
