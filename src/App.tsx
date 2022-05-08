@@ -100,6 +100,12 @@ export const App: React.FC = () => {
   };
 
   // Take yesterday's weather into consideration if your friend lie
+  const getYesterday = (yesterday: boolean) => {
+    if (yesterday) {
+      return true;
+    }
+    return false;
+  };
 
   // Change date to dd/mmm/yyy format
 
