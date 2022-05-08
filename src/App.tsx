@@ -108,6 +108,12 @@ export const App: React.FC = () => {
   };
 
   // Change date to dd/mmm/yyy format
+  const getDate = (date: Date) => {
+    const day = date.getDate();
+    const month = date.getMonth() + 1;
+    const year = date.getFullYear();
+    return `${day}/${month}/${year}`;
+  };
 
   const handleCanIPicnic = () => {
     if (city === "Melbourne") {
