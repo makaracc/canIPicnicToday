@@ -123,6 +123,15 @@ export const App: React.FC = () => {
     console.log(fromUnixTime(1647223200));
   };
 
+  // TODO:
+  // Take the percentage of rain during the day and calculate it as yes or no to picnic
+  const handleCanIPicnic2 = () => {
+    if (city === "Melbourne") {
+      getWeather(latlng.lat, latlng.lon);
+    }
+    console.log(fromUnixTime(1647223200));
+  };
+
   const component = (
     <Box
       sx={{
