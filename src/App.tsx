@@ -142,7 +142,15 @@ export const App: React.FC = () => {
       <Box>
         <FormControl>
           <InputLabel id="demo-simple-select-label">City</InputLabel>
-        
+          <Select
+
+            labelId="demo-simple-select-label"
+            id="demo-simple-select"
+            value={city}
+            onChange={handleCityChange}
+          >
+          
+            </Select>
         </FormControl>
       </Box>  
 
