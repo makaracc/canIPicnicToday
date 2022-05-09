@@ -137,34 +137,36 @@ export const App: React.FC = () => {
     handleCanIPicnic2();
   }, []);
 
-  return (
+  const first = (
     <Box>
+      <FormControl>
+        <InputLabel id="demo-simple-select-label">City</InputLabel>
+        <Select
+          labelId="demo-simple-select-label"
+          id="demo-simple-select"
+          value={city}
+          onChange={handleCityChange}
+        >
+          <MenuItem value="Melbourne">Melbourne</MenuItem>
+          <MenuItem value="Sydney">Sydney</MenuItem>
+          <MenuItem value="Brisbane">Brisbane</MenuItem>
+          <MenuItem value="Perth">Perth</MenuItem>
+          <MenuItem value="Adelaide">Adelaide</MenuItem>
+          <MenuItem value="Darwin">Darwin</MenuItem>
+          <MenuItem value="Hobart">Hobart</MenuItem>
+          <MenuItem value="Canberra">Canberra</MenuItem>
+          <MenuItem value="Gold Coast">Gold Coast</MenuItem>
+          <MenuItem value="Newcastle">Newcastle</MenuItem>
+          <MenuItem value="Darwin">Darwin</MenuItem>
+          <MenuItem value="Alice Springs">Alice Springs</MenuItem>
+        </Select>
+      </FormControl>
       <Box>
-        <FormControl>
-          <InputLabel id="demo-simple-select-label">City</InputLabel>
-          <Select
-
-            labelId="demo-simple-select-label"
-            id="demo-simple-select"
-            value={city}
-            onChange={handleCityChange}
-          >
-            <MenuItem value="Melbourne">Melbourne</MenuItem>
-            <MenuItem value="Sydney">Sydney</MenuItem>
-            <MenuItem value="Brisbane">Brisbane</MenuItem>
-            <MenuItem value="Perth">Perth</MenuItem>
-            <MenuItem value="Adelaide">Adelaide</MenuItem>
-            <MenuItem value="Darwin">Darwin</MenuItem>
-            <MenuItem value="Hobart">Hobart</MenuItem>
-            <MenuItem value="Canberra">Canberra</MenuItem>
-            <MenuItem value="Gold Coast">Gold Coast</MenuItem>
-            <MenuItem value="Newcastle">Newcastle</MenuItem>
-            <MenuItem value="Darwin">Darwin</MenuItem>
-            <MenuItem value="Alice Springs">Alice Springs</MenuItem>
-            </Select>
-        </FormControl>
-      </Box>  
-
+        <Button onClick={handleCanIPicnic}>Can I picnic?</Button>
+        <Button onClick={handleCanIPicnic2}>Can I picnic?</Button>
+      </Box>
+    </Box>
+  );
 
   const component = (
     <Box
@@ -202,5 +204,10 @@ export const App: React.FC = () => {
       {JSON.stringify(data)}
     </Box>
   );
-  return component;
+  return (
+    <>
+      {first}
+      {component}
+    </>
+  );
 };
