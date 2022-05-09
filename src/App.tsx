@@ -132,6 +132,11 @@ export const App: React.FC = () => {
     console.log(fromUnixTime(1647223200));
   };
 
+  useEffect(() => {
+    handleCanIPicnic();
+    handleCanIPicnic2();
+  }, []);
+
   const component = (
     <Box
       sx={{
