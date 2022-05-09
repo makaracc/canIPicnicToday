@@ -149,7 +149,18 @@ export const App: React.FC = () => {
             value={city}
             onChange={handleCityChange}
           >
-          
+            <MenuItem value="Melbourne">Melbourne</MenuItem>
+            <MenuItem value="Sydney">Sydney</MenuItem>
+            <MenuItem value="Brisbane">Brisbane</MenuItem>
+            <MenuItem value="Perth">Perth</MenuItem>
+            <MenuItem value="Adelaide">Adelaide</MenuItem>
+            <MenuItem value="Darwin">Darwin</MenuItem>
+            <MenuItem value="Hobart">Hobart</MenuItem>
+            <MenuItem value="Canberra">Canberra</MenuItem>
+            <MenuItem value="Gold Coast">Gold Coast</MenuItem>
+            <MenuItem value="Newcastle">Newcastle</MenuItem>
+            <MenuItem value="Darwin">Darwin</MenuItem>
+            <MenuItem value="Alice Springs">Alice Springs</MenuItem>
             </Select>
         </FormControl>
       </Box>  
