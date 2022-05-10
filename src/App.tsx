@@ -202,7 +202,7 @@ export const App: React.FC = () => {
           Can I Picnic?
         </Button>
       </Stack>
-      <Typography variant="h6">Hello</Typography>
+      <Typography variant="h1">Picnic day</Typography>
       {JSON.stringify(data)}
     </Box>
   );
