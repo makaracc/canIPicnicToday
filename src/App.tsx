@@ -8,6 +8,7 @@ import {
   Select,
   SelectChangeEvent,
   Stack,
+  Typography,
 } from "@mui/material";
 import axios from "axios";
 import fromUnixTime from "date-fns/fromUnixTime";
@@ -201,6 +202,7 @@ export const App: React.FC = () => {
           Can I Picnic?
         </Button>
       </Stack>
+      <Typography variant="h6">Hello</Typography>
       {JSON.stringify(data)}
     </Box>
   );
