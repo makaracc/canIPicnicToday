@@ -141,6 +141,7 @@ export const App: React.FC = () => {
   const first = (
     <Box>
       <FormControl>
+        <Button>Hi</Button>
         <InputLabel id="demo-simple-select-label">City</InputLabel>
         <Select
           labelId="demo-simple-select-label"
