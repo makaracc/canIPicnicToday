@@ -178,6 +178,7 @@ export const App: React.FC = () => {
         justifyContent: "center",
       }}
     >
+      <Typography variant="h1">hi</Typography>
       <Stack
         direction="row"
         width="30%"
@@ -202,7 +203,6 @@ export const App: React.FC = () => {
           Can I Picnic?
         </Button>
       </Stack>
-      <Typography variant="h1">Picnic day</Typography>
       {JSON.stringify(data)}
     </Box>
   );
