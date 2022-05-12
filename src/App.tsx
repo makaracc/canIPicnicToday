@@ -178,7 +178,6 @@ export const App: React.FC = () => {
         justifyContent: "center",
       }}
     >
-      <Typography variant="h1">hi</Typography>
       <Stack
         direction="row"
         width="30%"
