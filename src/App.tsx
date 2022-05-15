@@ -139,6 +139,12 @@ export const App: React.FC = () => {
   }, []);
 
   //show time
+  const isRightTime = (time: number) => {
+    if (time > 18) {
+      return true;
+    }
+    return false;
+  };
 
   const first = (
     <Box>
