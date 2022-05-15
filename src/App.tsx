@@ -146,6 +146,14 @@ export const App: React.FC = () => {
     return false;
   };
 
+  // show yesterday
+  const isYesterday = (yesterday: boolean) => {
+    if (yesterday) {
+      return true;
+    }
+    return false;
+  };
+
   const first = (
     <Box>
       <FormControl>
