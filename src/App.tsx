@@ -155,7 +155,12 @@ export const App: React.FC = () => {
   };
 
   // show temperature
-
+  const isHot = (temp: number) => {
+    if (temp > 20) {
+      return true;
+    }
+    return false;
+  };
   const first = (
     <Box>
       <FormControl>
