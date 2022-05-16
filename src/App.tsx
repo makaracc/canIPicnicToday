@@ -161,6 +161,8 @@ export const App: React.FC = () => {
     }
     return false;
   };
+
+  // show humidity
   const first = (
     <Box>
       <FormControl>
