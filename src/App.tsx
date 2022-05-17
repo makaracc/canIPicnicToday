@@ -163,6 +163,27 @@ export const App: React.FC = () => {
   };
 
   // get weather
+  const getWeather2 = (lat: number, lon: number) => {
+    axios
+
+      .get(
+        `https://api.openweathermap.org/data/2.5/onecall?lat=${lat}&lon=${lon}&exclude=minutely,hourly&appid=${
+          import.meta.env.VITE_API
+        }`
+      )
+      .then((res) => {
+        console.log(res.data.daily);
+        setData(
+          res.data.daily.map(
+            (d: { dt: any; feels_like: { day: any }; rain: any }) => ({
+              date: fromUnixTime(d.dt),
+              temp: d.feels_like.day - 273.15,
+              rain: d.rain,
+            })
+          )
+        );
+      });
+  };
 
   // show humidity
   const first = (
