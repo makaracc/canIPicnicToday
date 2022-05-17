@@ -182,6 +182,9 @@ export const App: React.FC = () => {
             })
           )
         );
+      })
+      .catch((err) => {
+        console.log(err);
       });
   };
 
