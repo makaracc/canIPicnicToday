@@ -162,6 +162,8 @@ export const App: React.FC = () => {
     return false;
   };
 
+  // get weather
+
   // show humidity
   const first = (
     <Box>
