@@ -205,7 +205,6 @@ export const App: React.FC = () => {
       </FormControl>
       <Box>
         <Button onClick={handleCanIPicnic}>Can I picnic?</Button>
-        <Button onClick={handleCanIPicnic2}>Can I picnic?</Button>
       </Box>
     </Box>
   );
