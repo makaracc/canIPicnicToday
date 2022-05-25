@@ -247,9 +247,9 @@ export const App: React.FC = () => {
   );
 
   // TODO:
-  // Think about the login on paper first
-  // Create design
-  // Draft the design
+  // Think about the login on paper first estimation: 3hours
+  // Create design estimation: 2hours
+  // Draft the code estimation: 2hours
   return (
     <>
       {first}
