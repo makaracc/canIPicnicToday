@@ -245,6 +245,11 @@ export const App: React.FC = () => {
       {JSON.stringify(data)}
     </Box>
   );
+
+  // TODO:
+  // Think about the login on paper first
+  // Create design
+  // Draft the design
   return (
     <>
       {first}
